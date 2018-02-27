@@ -1,12 +1,9 @@
-package com.example.zl.application;
+package com.example.zl;
 
 import com.example.zl.domain.ConfigDomain;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController/*等价于@Controller+@ResponseBody的结合，使用这个注解的类里面的方法都以json格式输出。*/
@@ -33,12 +30,11 @@ public class MySpringBootApplication {
 		return "Hello "+name+" "+age;
 	}*/
 
-	@Autowired
+	/*@Autowired
 	private ConfigDomain configDomain;
 
 	@RequestMapping("/")
 	public String index(){
 		return "Hello "+configDomain.getName()+" "+configDomain.getAge();
-	}
-
+	}*/
 }
