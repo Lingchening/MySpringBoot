@@ -1,11 +1,13 @@
 package com.example.zl.domain;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
+@Configuration
+@PropertySource(value = "classpath:test.properties")
 @ConfigurationProperties(prefix = "com.zl")
 //自定义文件中，需要添加如下
-//@PropertySource(value = "classpath:test.properties")
 public class ConfigDomain {
 
     private String name;
