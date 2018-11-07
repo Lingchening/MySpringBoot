@@ -31,8 +31,8 @@ public class UserController {
     @Value("${test1.name}")
     private String name;
 
-    @RequestMapping("/")
+    @RequestMapping("/hello")
     public String hello(){
-        return name;
+        return "hello";
     }
 }
