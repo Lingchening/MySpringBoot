@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-//
 public class UserController {
     @Autowired
     private ConfigDomain configDomain;
@@ -33,6 +32,7 @@ public class UserController {
 
     @RequestMapping("/hello")
     public String hello(){
-        return "hello";
+        System.out.println(name);
+        return name;
     }
 }

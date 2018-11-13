@@ -15,7 +15,7 @@ import javax.sql.DataSource;
 @SpringBootApplication/*开启自动配置*/
 //@EnableConfigurationProperties({ConfigDomain.class})
 @EnableConfigurationProperties({Test2Bean.class})
-public class MySpringBootApplication {
+public class Application {
 
 	/*启动项目有三种方式：*/
 	/*1.右键run()*/
@@ -24,7 +24,7 @@ public class MySpringBootApplication {
 
 	/*项目启动的入口*/
 	public static void main(String[] args) {
-		SpringApplication.run(MySpringBootApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 
